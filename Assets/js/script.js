@@ -6,34 +6,50 @@
 var today = moment().format("dddd, MMMM Do");
 $("#currentDay").text(today); 
 
-
 //let currentHour = get the current hour
 
-// GIVEN currentHour = 3
+var currentHour = moment().format("H");
 
-// GIVEN an blockHour element = 9
+console.log(currentHour);
 
-// BEHAVIOR WE WANT: WHAT CLASS should we set on 9AM? 
+//get number from the name of ID in a given workday hour row element:
 
-// EXPECTED RESULT: ADD PAST CLASS on 9AM element
+var blockHour = $("#hour-16").attr("ID");
 
-// What are the steps to get to our result?
+console.log(blockHour);
 
-// Compare  HOUR ASSOCIATED WITH TIME BLOCK to CURRENTHOUR
+var block = blockHour.match(/\d+/);
 
-// let blockHour = get time block hour (in our example, this is 9)
+console.log(block);
+
+var blockNumber = block.toString();
+
+console.log(blockNumber);
+
+//compare given row number from ID to the current hour time:
 
 // IF current hour 15:00 < blockHour 21:00
 
-// THEN we add FUTURE class to blockHour
+if (currentHour < blockNumber) {
 
+    // THEN we add FUTURE class to blockHour
+    $("#hour-16").addClass("future");
+    
 // ELSE IF currentHour > blockHour
+} else if (currentHour > blockNumber)
+{ 
+    // THEN "past" class to block element
+    $("#hour-16").addClass("past");
 
-// THEN "past" class to block element
-
+} 
 // ELSE  [ this is result of previous two ifs: currentHour = blockHour]
-
+else 
+{
 // THEN "present" class to block element
+
+$("#hour-16").addClass("present");
+
+};
 
 
 // PART ONE

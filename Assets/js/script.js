@@ -8,6 +8,8 @@ $("#currentDay").text(today);
 
 //let currentHour = get the current hour
 
+var block16 = function () {
+
 var currentHour = moment().format("H");
 
 console.log(currentHour);
@@ -51,6 +53,58 @@ $("#hour-16").addClass("present");
 
 };
 
+};
+
+block16();
+
+var block17 = function () {
+
+    var currentHour = moment().format("H");
+    
+    console.log(currentHour);
+    
+    //get number from the name of ID in a given workday hour row element:
+    
+    var blockHour = $("#hour-17").attr("ID");
+    
+    console.log(blockHour);
+    
+    var block = blockHour.match(/\d+/);
+    
+    console.log(block);
+    
+    var blockNumber = block.toString();
+    
+    console.log(blockNumber);
+    
+    //compare given row number from ID to the current hour time:
+    
+    // IF current hour 15:00 < blockHour 21:00
+    
+    if (currentHour < blockNumber) {
+    
+        // THEN we add FUTURE class to blockHour
+        $("#hour-17").addClass("future");
+        
+    // ELSE IF currentHour > blockHour
+    } else if (currentHour > blockNumber)
+    { 
+        // THEN "past" class to block element
+        $("#hour-17").addClass("past");
+    
+    } 
+    // ELSE  [ this is result of previous two ifs: currentHour = blockHour]
+    else 
+    {
+    // THEN "present" class to block element
+    
+    $("#hour-17").addClass("present");
+    
+    };
+    
+    };
+    
+block17();
 
 // PART ONE
 //when loading website

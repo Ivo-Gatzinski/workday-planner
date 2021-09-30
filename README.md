@@ -12,7 +12,7 @@ This app runs in the browser and feature dynamically updated HTML and CSS powere
 
 This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
-The following animation demonstrates the application functionality:
+The following screenshot demonstrates the application functionality:
 
 ![A user clicks on slots on the color-coded calendar and edits the events.](./assets/img/screenshot.png)
 

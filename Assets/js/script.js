@@ -11,6 +11,10 @@ $("#currentDay").text(today);
 
 //Color code each block comparing it to current time and updating classes:
 
+// block9 has HA format not H format and 
+//is selecting "hour" not "hour-9" 
+//to test different behavior
+
 var block9 = function () {
 
     //let currentHour = get the current hour
@@ -20,29 +24,29 @@ var block9 = function () {
     
     //get number from the name of ID in a given workday hour row element:
     
-    var blockHour = $("#hour-9").attr("ID");
+    var blockHour = $("hour-9").val();
     
     console.log(blockHour);
     
-    var block = blockHour.match(/\d+/);
+    // var block = blockHour.match(/\d+/);
     
-    console.log(block);
+    // console.log(block);
     
-    var blockNumber = block.toString();
+    // var blockNumber = block.toString();
     
-    console.log(blockNumber);
+    // console.log(blockNumber);
     
     //compare given row number from ID to the current hour time:
     
     // IF current hour 15:00 < blockHour 21:00
     
-    if (currentHour < blockNumber) {
+    if (currentHour < blockHour) {
     
         // THEN we add FUTURE class to blockHour
         $("#hour-9").addClass("future");
         
     // ELSE IF currentHour > blockHour
-    } else if (currentHour > blockNumber)
+    } else if (currentHour > blockHour)
     { 
         // THEN "past" class to block element
         $("#hour-9").addClass("past");

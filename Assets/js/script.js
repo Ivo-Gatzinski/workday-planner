@@ -5,465 +5,356 @@
 //add current day to header
 
 var today = moment().format("dddd, MMMM Do");
-$("#currentDay").text(today); 
+$("#currentDay").text(today);
 
 //PART ONE:
 
 //Color code each block comparing it to current time and updating classes:
 
-// block9 has HA format not H format and 
-//is selecting "hour" not "hour-9" 
-//to test different behavior
-
-var block9 = function () {
-
-    //let currentHour = get the current hour
-    var currentHour = moment().format("H");
-    
-    console.log(currentHour);
-    
-    //get number from the name of ID in a given workday hour row element:
-    
-    var blockHour = $("hour-9").val();
-    
-    console.log(blockHour);
-    
-    // var block = blockHour.match(/\d+/);
-    
-    // console.log(block);
-    
-    // var blockNumber = block.toString();
-    
-    // console.log(blockNumber);
-    
-    //compare given row number from ID to the current hour time:
-    
-    // IF current hour 15:00 < blockHour 21:00
-    
-    if (currentHour < blockHour) {
-    
-        // THEN we add FUTURE class to blockHour
-        $("#hour-9").addClass("future");
-        
-    // ELSE IF currentHour > blockHour
-    } else if (currentHour > blockHour)
-    { 
-        // THEN "past" class to block element
-        $("#hour-9").addClass("past");
-    
-    } 
-    // ELSE  [ this is result of previous two ifs: currentHour = blockHour]
-    else 
-    {
-    // THEN "present" class to block element
-    
-    $("#hour-9").addClass("present");
-    
-    };
-    
-    };
-    
-    block9();
-
-var block10 = function () {
-
-    //let currentHour = get the current hour
-    var currentHour = moment().format("H");
-    
-    console.log(currentHour);
-    
-    //get number from the name of ID in a given workday hour row element:
-    
-    var blockHour = $("#hour-10").attr("ID");
-    
-    console.log(blockHour);
-    
-    var block = blockHour.match(/\d+/);
-    
-    console.log(block);
-    
-    var blockNumber = block.toString();
-    
-    console.log(blockNumber);
-    
-    //compare given row number from ID to the current hour time:
-    
-    // IF current hour 15:00 < blockHour 21:00
-    
-    if (currentHour < blockNumber) {
-    
-        // THEN we add FUTURE class to blockHour
-        $("#hour-10").addClass("future");
-        
-    // ELSE IF currentHour > blockHour
-    } else if (currentHour > blockNumber)
-    { 
-        // THEN "past" class to block element
-        $("#hour-10").addClass("past");
-    
-    } 
-    // ELSE  [ this is result of previous two ifs: currentHour = blockHour]
-    else 
-    {
-    // THEN "present" class to block element
-    
-    $("#hour-10").addClass("present");
-    
-    };
-    
-    };
-    
-    block10();
-
-var block11 = function () {
-
-    //let currentHour = get the current hour
-    var currentHour = moment().format("H");
-    
-    console.log(currentHour);
-    
-    //get number from the name of ID in a given workday hour row element:
-    
-    var blockHour = $("#hour-11").attr("ID");
-    
-    console.log(blockHour);
-    
-    var block = blockHour.match(/\d+/);
-    
-    console.log(block);
-    
-    var blockNumber = block.toString();
-    
-    console.log(blockNumber);
-    
-    //compare given row number from ID to the current hour time:
-    
-    // IF current hour 15:00 < blockHour 21:00
-    
-    if (currentHour < blockNumber) {
-    
-        // THEN we add FUTURE class to blockHour
-        $("#hour-11").addClass("future");
-        
-    // ELSE IF currentHour > blockHour
-    } else if (currentHour > blockNumber)
-    { 
-        // THEN "past" class to block element
-        $("#hour-11").addClass("past");
-    
-    } 
-    // ELSE  [ this is result of previous two ifs: currentHour = blockHour]
-    else 
-    {
-    // THEN "present" class to block element
-    
-    $("#hour-11").addClass("present");
-    
-    };
-    
-    };
-    
-    block11();
-
-var block12 = function () {
-
-    //let currentHour = get the current hour
-    var currentHour = moment().format("H");
-    
-    console.log(currentHour);
-    
-    //get number from the name of ID in a given workday hour row element:
-    
-    var blockHour = $("#hour-12").attr("ID");
-    
-    console.log(blockHour);
-    
-    var block = blockHour.match(/\d+/);
-    
-    console.log(block);
-    
-    var blockNumber = block.toString();
-    
-    console.log(blockNumber);
-    
-    //compare given row number from ID to the current hour time:
-    
-    // IF current hour 15:00 < blockHour 21:00
-    
-    if (currentHour < blockNumber) {
-    
-        // THEN we add FUTURE class to blockHour
-        $("#hour-12").addClass("future");
-        
-    // ELSE IF currentHour > blockHour
-    } else if (currentHour > blockNumber)
-    { 
-        // THEN "past" class to block element
-        $("#hour-12").addClass("past");
-    
-    } 
-    // ELSE  [ this is result of previous two ifs: currentHour = blockHour]
-    else 
-    {
-    // THEN "present" class to block element
-    
-    $("#hour-12").addClass("present");
-    
-    };
-    
-    };
-    
-    block12();
-
-var block13 = function () {
-
-    //let currentHour = get the current hour
-    var currentHour = moment().format("H");
-    
-    console.log(currentHour);
-    
-    //get number from the name of ID in a given workday hour row element:
-    
-    var blockHour = $("#hour-13").attr("ID");
-    
-    console.log(blockHour);
-    
-    var block = blockHour.match(/\d+/);
-    
-    console.log(block);
-    
-    var blockNumber = block.toString();
-    
-    console.log(blockNumber);
-    
-    //compare given row number from ID to the current hour time:
-    
-    // IF current hour 15:00 < blockHour 21:00
-    
-    if (currentHour < blockNumber) {
-    
-        // THEN we add FUTURE class to blockHour
-        $("#hour-13").addClass("future");
-        
-    // ELSE IF currentHour > blockHour
-    } else if (currentHour > blockNumber)
-    { 
-        // THEN "past" class to block element
-        $("#hour-13").addClass("past");
-    
-    } 
-    // ELSE  [ this is result of previous two ifs: currentHour = blockHour]
-    else 
-    {
-    // THEN "present" class to block element
-    
-    $("#hour-13").addClass("present");
-    
-    };
-    
-    };
-    
-    block13();
-
-var block14 = function () {
-
-    //let currentHour = get the current hour
-    var currentHour = moment().format("H");
-    
-    console.log(currentHour);
-    
-    //get number from the name of ID in a given workday hour row element:
-    
-    var blockHour = $("#hour-14").attr("ID");
-    
-    console.log(blockHour);
-    
-    var block = blockHour.match(/\d+/);
-    
-    console.log(block);
-    
-    var blockNumber = block.toString();
-    
-    console.log(blockNumber);
-    
-    //compare given row number from ID to the current hour time:
-    
-    // IF current hour 15:00 < blockHour 21:00
-    
-    if (currentHour < blockNumber) {
-    
-        // THEN we add FUTURE class to blockHour
-        $("#hour-14").addClass("future");
-        
-    // ELSE IF currentHour > blockHour
-    } else if (currentHour > blockNumber)
-    { 
-        // THEN "past" class to block element
-        $("#hour-14").addClass("past");
-    
-    } 
-    // ELSE  [ this is result of previous two ifs: currentHour = blockHour]
-    else 
-    {
-    // THEN "present" class to block element
-    
-    $("#hour-14").addClass("present");
-    
-    };
-    
-    };
-    
-    block14();
-
-var block15 = function () {
-
-    //let currentHour = get the current hour
-    var currentHour = moment().format("H");
-    
-    console.log(currentHour);
-    
-    //get number from the name of ID in a given workday hour row element:
-    
-    var blockHour = $("#hour-15").attr("ID");
-    
-    console.log(blockHour);
-    
-    var block = blockHour.match(/\d+/);
-    
-    console.log(block);
-    
-    var blockNumber = block.toString();
-    
-    console.log(blockNumber);
-    
-    //compare given row number from ID to the current hour time:
-    
-    // IF current hour 15:00 < blockHour 21:00
-    
-    if (currentHour < blockNumber) {
-    
-        // THEN we add FUTURE class to blockHour
-        $("#hour-15").addClass("future");
-        
-    // ELSE IF currentHour > blockHour
-    } else if (currentHour > blockNumber)
-    { 
-        // THEN "past" class to block element
-        $("#hour-15").addClass("past");
-    
-    } 
-    // ELSE  [ this is result of previous two ifs: currentHour = blockHour]
-    else 
-    {
-    // THEN "present" class to block element
-    
-    $("#hour-15").addClass("present");
-    
-    };
-    
-    };
-    
-    block15();
-
-var block16 = function () {
-
-//let currentHour = get the current hour
+for (i = 9; i < 18; i++) {
 var currentHour = moment().format("H");
+var blockHour = i;
+  if (currentHour < blockHour) {
+    $("#hour-" + i).addClass("future");
+  } else if (currentHour > blockHour) {
+    $("#hour-" + i).addClass("past");
+  } else {
+    $("#hour-" + i).addClass("present");
+  }
+}
 
-console.log(currentHour);
+// var block9 = function () {
+//   var currentHour = moment().format("H");
 
-//get number from the name of ID in a given workday hour row element:
+//   var blockHour = 9;
 
-var blockHour = $("#hour-16").attr("ID");
+//   if (currentHour < blockHour) {
+//     $("#hour-9").addClass("future");
+//   } else if (currentHour > blockHour) {
+//     $("#hour-9").addClass("past");
+//   } else {
+//     $("#hour-9").addClass("present");
+//   }
+// };
 
-console.log(blockHour);
+// block9();
 
-var block = blockHour.match(/\d+/);
+// var block10 = function () {
+//   var currentHour = moment().format("H");
 
-console.log(block);
+//   var blockHour = 10;
 
-var blockNumber = block.toString();
+//   if (currentHour < blockHour) {
+//     $("#hour-10").addClass("future");
+//   } else if (currentHour > blockHour) {
+//     $("#hour-10").addClass("past");
+//   } else {
+//     $("#hour-10").addClass("present");
+//   }
+// };
 
-console.log(blockNumber);
+// block10();
 
-//compare given row number from ID to the current hour time:
+// var block11 = function () {
+//   //let currentHour = get the current hour
+//   var currentHour = moment().format("H");
 
-// IF current hour 15:00 < blockHour 21:00
+//   console.log(currentHour);
 
-if (currentHour < blockNumber) {
+//   //get number from the name of ID in a given workday hour row element:
 
-    // THEN we add FUTURE class to blockHour
-    $("#hour-16").addClass("future");
-    
-// ELSE IF currentHour > blockHour
-} else if (currentHour > blockNumber)
-{ 
-    // THEN "past" class to block element
-    $("#hour-16").addClass("past");
+//   var blockHour = $("#hour-11").attr("ID");
 
-} 
-// ELSE  [ this is result of previous two ifs: currentHour = blockHour]
-else 
-{
-// THEN "present" class to block element
+//   console.log(blockHour);
 
-$("#hour-16").addClass("present");
+//   var block = blockHour.match(/\d+/);
 
-};
+//   console.log(block);
 
-};
+//   var blockNumber = block.toString();
 
-block16();
+//   console.log(blockNumber);
 
-var block17 = function () {
+//   //compare given row number from ID to the current hour time:
 
-    //let currentHour = get the current hour
-    var currentHour = moment().format("H");
-    
-    console.log(currentHour);
-    
-    //get number from the name of ID in a given workday hour row element:
-    
-    var blockHour = $("#hour-17").attr("ID");
-    
-    console.log(blockHour);
-    
-    var block = blockHour.match(/\d+/);
-    
-    console.log(block);
-    
-    var blockNumber = block.toString();
-    
-    console.log(blockNumber);
-    
-    //compare given row number from ID to the current hour time:
-    
-    // IF current hour 15:00 < blockHour 21:00
-    
-    if (currentHour < blockNumber) {
-    
-        // THEN we add FUTURE class to blockHour
-        $("#hour-17").addClass("future");
-        
-    // ELSE IF currentHour > blockHour
-    } else if (currentHour > blockNumber)
-    { 
-        // THEN "past" class to block element
-        $("#hour-17").addClass("past");
-    
-    } 
-    // ELSE  [ this is result of previous two ifs: currentHour = blockHour]
-    else 
-    {
-    // THEN "present" class to block element
-    
-    $("#hour-17").addClass("present");
-    
-    };
-    
-    };
-    
-block17();
+//   // IF current hour 15:00 < blockHour 21:00
+
+//   if (currentHour < blockNumber) {
+//     // THEN we add FUTURE class to blockHour
+//     $("#hour-11").addClass("future");
+
+//     // ELSE IF currentHour > blockHour
+//   } else if (currentHour > blockNumber) {
+//     // THEN "past" class to block element
+//     $("#hour-11").addClass("past");
+//   }
+//   // ELSE  [ this is result of previous two ifs: currentHour = blockHour]
+//   else {
+//     // THEN "present" class to block element
+
+//     $("#hour-11").addClass("present");
+//   }
+// };
+
+// block11();
+
+// var block12 = function () {
+//   //let currentHour = get the current hour
+//   var currentHour = moment().format("H");
+
+//   console.log(currentHour);
+
+//   //get number from the name of ID in a given workday hour row element:
+
+//   var blockHour = $("#hour-12").attr("ID");
+
+//   console.log(blockHour);
+
+//   var block = blockHour.match(/\d+/);
+
+//   console.log(block);
+
+//   var blockNumber = block.toString();
+
+//   console.log(blockNumber);
+
+//   //compare given row number from ID to the current hour time:
+
+//   // IF current hour 15:00 < blockHour 21:00
+
+//   if (currentHour < blockNumber) {
+//     // THEN we add FUTURE class to blockHour
+//     $("#hour-12").addClass("future");
+
+//     // ELSE IF currentHour > blockHour
+//   } else if (currentHour > blockNumber) {
+//     // THEN "past" class to block element
+//     $("#hour-12").addClass("past");
+//   }
+//   // ELSE  [ this is result of previous two ifs: currentHour = blockHour]
+//   else {
+//     // THEN "present" class to block element
+
+//     $("#hour-12").addClass("present");
+//   }
+// };
+
+// block12();
+
+// var block13 = function () {
+//   //let currentHour = get the current hour
+//   var currentHour = moment().format("H");
+
+//   console.log(currentHour);
+
+//   //get number from the name of ID in a given workday hour row element:
+
+//   var blockHour = $("#hour-13").attr("ID");
+
+//   console.log(blockHour);
+
+//   var block = blockHour.match(/\d+/);
+
+//   console.log(block);
+
+//   var blockNumber = block.toString();
+
+//   console.log(blockNumber);
+
+//   //compare given row number from ID to the current hour time:
+
+//   // IF current hour 15:00 < blockHour 21:00
+
+//   if (currentHour < blockNumber) {
+//     // THEN we add FUTURE class to blockHour
+//     $("#hour-13").addClass("future");
+
+//     // ELSE IF currentHour > blockHour
+//   } else if (currentHour > blockNumber) {
+//     // THEN "past" class to block element
+//     $("#hour-13").addClass("past");
+//   }
+//   // ELSE  [ this is result of previous two ifs: currentHour = blockHour]
+//   else {
+//     // THEN "present" class to block element
+
+//     $("#hour-13").addClass("present");
+//   }
+// };
+
+// block13();
+
+// var block14 = function () {
+//   //let currentHour = get the current hour
+//   var currentHour = moment().format("H");
+
+//   console.log(currentHour);
+
+//   //get number from the name of ID in a given workday hour row element:
+
+//   var blockHour = $("#hour-14").attr("ID");
+
+//   console.log(blockHour);
+
+//   var block = blockHour.match(/\d+/);
+
+//   console.log(block);
+
+//   var blockNumber = block.toString();
+
+//   console.log(blockNumber);
+
+//   //compare given row number from ID to the current hour time:
+
+//   // IF current hour 15:00 < blockHour 21:00
+
+//   if (currentHour < blockNumber) {
+//     // THEN we add FUTURE class to blockHour
+//     $("#hour-14").addClass("future");
+
+//     // ELSE IF currentHour > blockHour
+//   } else if (currentHour > blockNumber) {
+//     // THEN "past" class to block element
+//     $("#hour-14").addClass("past");
+//   }
+//   // ELSE  [ this is result of previous two ifs: currentHour = blockHour]
+//   else {
+//     // THEN "present" class to block element
+
+//     $("#hour-14").addClass("present");
+//   }
+// };
+
+// block14();
+
+// var block15 = function () {
+//   //let currentHour = get the current hour
+//   var currentHour = moment().format("H");
+
+//   console.log(currentHour);
+
+//   //get number from the name of ID in a given workday hour row element:
+
+//   var blockHour = $("#hour-15").attr("ID");
+
+//   console.log(blockHour);
+
+//   var block = blockHour.match(/\d+/);
+
+//   console.log(block);
+
+//   var blockNumber = block.toString();
+
+//   console.log(blockNumber);
+
+//   //compare given row number from ID to the current hour time:
+
+//   // IF current hour 15:00 < blockHour 21:00
+
+//   if (currentHour < blockNumber) {
+//     // THEN we add FUTURE class to blockHour
+//     $("#hour-15").addClass("future");
+
+//     // ELSE IF currentHour > blockHour
+//   } else if (currentHour > blockNumber) {
+//     // THEN "past" class to block element
+//     $("#hour-15").addClass("past");
+//   }
+//   // ELSE  [ this is result of previous two ifs: currentHour = blockHour]
+//   else {
+//     // THEN "present" class to block element
+
+//     $("#hour-15").addClass("present");
+//   }
+// };
+
+// block15();
+
+// var block16 = function () {
+//   //let currentHour = get the current hour
+//   var currentHour = moment().format("H");
+
+//   console.log(currentHour);
+
+//   //get number from the name of ID in a given workday hour row element:
+
+//   var blockHour = $("#hour-16").attr("ID");
+
+//   console.log(blockHour);
+
+//   var block = blockHour.match(/\d+/);
+
+//   console.log(block);
+
+//   var blockNumber = block.toString();
+
+//   console.log(blockNumber);
+
+//   //compare given row number from ID to the current hour time:
+
+//   // IF current hour 15:00 < blockHour 21:00
+
+//   if (currentHour < blockNumber) {
+//     // THEN we add FUTURE class to blockHour
+//     $("#hour-16").addClass("future");
+
+//     // ELSE IF currentHour > blockHour
+//   } else if (currentHour > blockNumber) {
+//     // THEN "past" class to block element
+//     $("#hour-16").addClass("past");
+//   }
+//   // ELSE  [ this is result of previous two ifs: currentHour = blockHour]
+//   else {
+//     // THEN "present" class to block element
+
+//     $("#hour-16").addClass("present");
+//   }
+// };
+
+// block16();
+
+// var block17 = function () {
+//   //let currentHour = get the current hour
+//   var currentHour = moment().format("H");
+
+//   console.log(currentHour);
+
+//   //get number from the name of ID in a given workday hour row element:
+
+//   var blockHour = $("#hour-17").attr("ID");
+
+//   console.log(blockHour);
+
+//   var block = blockHour.match(/\d+/);
+
+//   console.log(block);
+
+//   var blockNumber = block.toString();
+
+//   console.log(blockNumber);
+
+//   //compare given row number from ID to the current hour time:
+
+//   // IF current hour 15:00 < blockHour 21:00
+
+//   if (currentHour < blockNumber) {
+//     // THEN we add FUTURE class to blockHour
+//     $("#hour-17").addClass("future");
+
+//     // ELSE IF currentHour > blockHour
+//   } else if (currentHour > blockNumber) {
+//     // THEN "past" class to block element
+//     $("#hour-17").addClass("past");
+//   }
+//   // ELSE  [ this is result of previous two ifs: currentHour = blockHour]
+//   else {
+//     // THEN "present" class to block element
+
+//     $("#hour-17").addClass("present");
+//   }
+// };
+
+// block17();
 
 // PART TWO:
 
@@ -516,13 +407,13 @@ if (hour17) {
   $("#hour-17").children("textarea").val(hour17);
 }
 
-// WHEN user clicks a save button, 
+// WHEN user clicks a save button,
 $(".saveBtn").on("click", function () {
-    // traverse from button element to the input
+  // traverse from button element to the input
   var input = $(this).parent().children("textarea");
   // get user input from the input element
   var task = input.val();
-// get id of input
+  // get id of input
   var id = $(this).parent().attr("id");
   // save to local storage using id as the key
   localStorage.setItem(id, task);
